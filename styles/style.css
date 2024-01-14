@@ -188,17 +188,21 @@ main{
     }
 
     /* sponsors section styles  */
+    .sponsors{
+        padding: 0 10px;
+    }
     .sponsors hr{
         display: none;
     }
     .sponsor-images{
-        gap: 5px;
+        gap: 10px;
     }
     .sponsor-images img{
-        transform: scale(80%);
+        transform: scale(70%);
     }
 
 }
+
 
 /* tablet media styles */
 @media screen and (min-width:576px) and (max-width:768px) {
@@ -226,6 +230,11 @@ main{
     .banner-content p{
         font-size: 13px;
     }
+
+    /* sponsors section styles  */
+    .sponsors hr{
+        display: none;
+    }
 }
 
 /* big tablet media styles */
@@ -248,5 +257,10 @@ main{
     }
     .banner-content p{
         font-size: 14px;
+    }
+
+    /* sponsors section styles  */
+    .sponsors hr{
+        display: none;
     }
 }
