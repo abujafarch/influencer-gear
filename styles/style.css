@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter:wght@300;400;500;600;700;800&family=Josefin+Sans:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&family=Manrope:wght@200;300;400;500;600;700&family=Merriweather:wght@300;400;700;900&family=Nunito:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&family=Salsa&family=Work+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* shared related styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+.btn-primary{
+    padding: 10px 24px;
+    font-size: 16px;
+    color: white;
+    background-color: #E02C6D;
+    border: none;
+}
+
+/* header section styles */
+header{
+    border: 2px solid turquoise;
+    max-width: 1440px;
+    margin:0 auto;
+}
+
+.header{
+    max-width: 1200px;
+    padding: 85px 45px 0;
+    margin: 0 auto;
+}
+
+/* nav section styles */
+.store-title{
+    color: #3A3A3A;
+    font-size: 1.5rem;
+    font-family: Poppins;
+    font-weight: 700;
+}
+.header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header nav ul{
+    display: flex;
+    gap: 34px;
+    list-style: none;
+    align-items: center;
+}
+.header nav ul li a{
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-family: Poppins;
+    font-weight: 600;
+}
+.menu-icon, .cart-icon{
+    display: none;
+}
+
+
+/* banner section styles */
+.banner{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-content{
+    width: 54%;
+}
+.banner-content h1{
+    color: #3A3A3A;
+    font-size: 3.15rem;
+    font-weight: 700;
+    font-family: Poppins;
+    margin-bottom: 1rem;
+}
+.banner-content p{
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: Poppins;
+    margin-bottom: 1rem;
+}
+.banner-content .prebook{
+    color: white;
+    font-size: 1rem;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.banner-img{
+    width: 41%;
+    background-image: url('../images/circle-design.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.banner-img img{
+    width: 100%;
+    transform: scale(0.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query styles */
+
+/* mobile device media styles */
+@media screen and (max-width:576px) {
+
+    /* header section styles  */
+    .header{
+        padding: 35px 16px 0;
+    }
+    .header nav .store-title{
+        font-size: 1rem;
+        font-weight: 700px;
+    }
+    .header nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header nav .menu-icon, .cart-icon{
+        display: block;
+    }
+    .header nav .list-item{
+        display: none;
+    }
+
+    /* banner section styles  */
+    .banner{
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+    .banner-content{
+        width: 100%;
+        text-align: center;
+    }
+    .banner-content h1{
+        font-size: 28px;
+    }
+    .banner-content p{
+        font-size: 14px;
+    }
+
+    .banner-img{
+        width: 100%;
+        height: calc(100vw - 32px);
+    }
+
+}
+
+/* tablet media styles */
+@media screen and (min-width:576px) and (max-width:768px) {
+    /* header section styles  */
+    .header{
+        padding: 35px 16px 0;
+    }
+    .header nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header nav .menu-icon, .cart-icon{
+        font-size: 1.3rem;
+        display: block;
+    }
+    .header nav .list-item{
+        display: none;
+    }
+}
+
+/* big tablet media styles */
+@media screen and (min-width:768px) and (max-width:992px) {
+
+    /* header section styles  */
+    .header{
+        padding: 35px 20px 0;
+    }
+    .header nav ul li a{
+        font-size: 14px;
+    }
+    .header nav .store-title{
+        font-size: 22px;
+    }
+}
