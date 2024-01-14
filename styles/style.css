@@ -15,9 +15,9 @@
 
 /* header section styles */
 header{
-    border: 2px solid turquoise;
     max-width: 1440px;
     margin:0 auto;
+    box-shadow: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;
 }
 
 .header{
@@ -99,6 +99,36 @@ header{
 }
 
 
+/* main section styles */
+main{
+    max-width: 1440px;
+    margin: 70px auto 0;
+    /* border: 2px solid brown; */
+}
+
+.sponsors{
+    max-width: 1110px;
+    padding:0 45px;
+    margin: 0 auto;
+}
+.sponsors hr{
+    border: none;
+    height: 2px;
+    background-image: linear-gradient(90deg, #c0ccda1a 0%, #c0ccda99 50.38%, #c0ccda1a 100%);
+}
+.sponsor-images{
+    margin: 35px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
 
 
 
@@ -155,6 +185,17 @@ header{
 
     .banner-img{
         width: 100%;
+    }
+
+    /* sponsors section styles  */
+    .sponsors hr{
+        display: none;
+    }
+    .sponsor-images{
+        gap: 5px;
+    }
+    .sponsor-images img{
+        transform: scale(80%);
     }
 
 }
